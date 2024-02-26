@@ -38,17 +38,17 @@
 </script>
 
 <div class="timer">
-	<h1>Focus Timer</h1>
-	<h2>{clock}</h2>
+	<h1 class="text-center font-bold text-4xl">Focus Timer</h1>
+	<h2 class="text-center  text-8xl py-10">{clock}</h2>
 <!--	Focus session is done, display message to the user. -->
 	{#if minutes === 0 && seconds === 0}
 		<p>Session complete!</p>
 	{/if}
 </div>
 
-<div class="timerControls">
-	<button class="changeTimeButton" on:click={increaseTime}>+</button>
-	<button class="changeTimeButton" on:click={decreaseTime}>-</button>
+<div class="text-center">
+	<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={increaseTime}>+ 5 Minutes </button>
+	<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={decreaseTime}>- 5 Minutes</button>
 	<button class="changeTimeButton" on:click={startTimer}>Start</button>
 	<button class="changeTimeButton" on:click={stopTimer}>Stop</button>
 </div>
