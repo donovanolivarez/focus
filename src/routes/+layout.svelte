@@ -6,7 +6,7 @@
 </script>
 
 
-<div class="container mx-auto px-40 py-10">
+<div class="container mx-auto px-40 py-10 ">
 	<Header/>
 	<slot/>
 	<Footer/>
